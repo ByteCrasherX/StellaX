@@ -4,7 +4,7 @@
     "keywords": [
       "telegram",
       "bot",
-      "Altron"
+      "ZenBotX"
     ],
       "buildpacks": [{
       "url": "heroku/python"
