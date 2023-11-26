@@ -22,13 +22,13 @@ async def join(client: Client, message: Message):
 # LEAVE COMMAND
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["leave", "remove"], [".", "!", "/"]))
-async def leave(xspam: Client, message: Message):
-    alt = message.text.split(" ")
+async def leave(Stella: Client, message: Message):
+    zen = message.text.split(" ")
     if len(zen) > 1:
         if zen[1] in GROUP:
             return
         try:
-           await xspam.leave_chat(alt[1])
+           await Stella.leave_chat(zen[1])
            await message.reply_text(f"**Left Successfully ✅**")
         except Exception as ex:
            await message.reply_text(f"**ERROR:** \n\n{str(ex)}")
@@ -40,7 +40,7 @@ async def leave(xspam: Client, message: Message):
         elif chat in GROUP:
               return
         try:
-           await xspam.leave_chat(chat)
+           await Stella.leave_chat(chat)
            await message.reply_text(f"**Left Successfully ✅ **")
         except Exception as ex:
            await message.reply_text(f"**ERROR:** \n\n{str(ex)}")

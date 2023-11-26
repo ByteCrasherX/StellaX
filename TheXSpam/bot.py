@@ -28,11 +28,11 @@ async def ping(_, e: Message):
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["alive"], ["/", ".", "!"]))
-async def alive(xspam: Client, msg: Message):
+async def alive(Stella: Client, msg: Message):
        if ".jpg" in ALIVE_PIC or ".png" in ALIVE_PIC:
-              await xspam.send_photo(msg.chat.id, ALIVE_PIC, caption=ZEN)
+              await Stella.send_photo(msg.chat.id, ALIVE_PIC, caption=ZEN)
        if ".mp4" in ALIVE_PIC or ".MP4," in ALIVE_PIC:
-              await xspam.send_video(msg.chat.id, ALIVE_PIC, caption=ZEN)
+              await Stella.send_video(msg.chat.id, ALIVE_PIC, caption=ZEN)
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["reboot", "restart"], ["/", ".", "!"]))

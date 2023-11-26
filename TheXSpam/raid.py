@@ -11,12 +11,12 @@ from config import OWNER_ID, SUDO_USERS
 # RAIDING FEATURES
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["raid"], ["/", "!", "."]))
-async def raid(xspam: Client, message: Message):  
+async def raid(Stella: Client, message: Message):  
       # Hero = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
-      alt = message.text.split(" ")
+      zen = message.text.split(" ")
 
-      if len(alt) > 2:
-            ok = await xspam.get_users(alt[2])
+      if len(zen) > 2:
+            ok = await Stella.get_users(zen[2])
             id = ok.id
             if id in THE_ALTS:
                   await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀʟᴛʀᴏɴ'ꜱ ᴏᴡɴᴇʀ")
@@ -25,18 +25,18 @@ async def raid(xspam: Client, message: Message):
             elif id in SUDO_USERS:
                   await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀ ꜱᴜᴅᴏ ᴜꜱᴇʀ")
             else:
-                  counts = int(alt[1])
+                  counts = int(zen[1])
                   fname = ok.first_name
                   mention = f"[{fname}](tg://user?id={id})"
                   for _ in range(counts):
                         reply = choice(RAID)
                         msg = f"{mention} {reply}"
-                        await xspam.send_message(message.chat.id, msg)
+                        await Stella.send_message(message.chat.id, msg)
                         await asyncio.sleep(0.3)
 
-      elif message.reply_to_message and (len(alt) == 2):
+      elif message.reply_to_message and (len(zen) == 2):
             user_id = message.reply_to_message.from_user.id
-            ok = await xspam.get_users(user_id)
+            ok = await Stella.get_users(user_id)
             id = ok.id
             if id in THE_ALTS:
                   await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀʟᴛʀᴏɴ'ꜱ ᴏᴡɴᴇʀ")
@@ -45,13 +45,13 @@ async def raid(xspam: Client, message: Message):
             elif id in SUDO_USERS:
                   await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀ ꜱᴜᴅᴏ ᴜꜱᴇʀ")
             else:
-                  counts = int(alt[1])
+                  counts = int(zen[1])
                   fname = ok.first_name
                   mention = f"[{fname}](tg://user?id={id})"
                   for _ in range(counts):
                         reply = choice(RAID)
                         msg = f"{mention} {reply}"
-                        await xspam.send_message(message.chat.id, msg)
+                        await Stella.send_message(message.chat.id, msg)
                         await asyncio.sleep(0.3)
 
       else:
@@ -61,12 +61,12 @@ async def raid(xspam: Client, message: Message):
 rusers = []
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["rraid", "replyraid"], ["/", ".", "!"]))
-async def rraid(xspam: Client, message: Message):
+async def rraid(Stella: Client, message: Message):
       global rusers
-      alt = message.text.split(" ")
+      zen = message.text.split(" ")
 
-      if len(alt) > 1:
-          ok = await xspam.get_users(alt[1])
+      if len(zen) > 1:
+          ok = await Stella.get_users(zen[1])
           id = ok.id
           if id in THE_ALTS:
                 await message.reply_text("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀʟᴛʀᴏɴ'ꜱ ᴏᴡɴᴇʀ")
@@ -95,12 +95,12 @@ async def rraid(xspam: Client, message: Message):
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["drraid", "draid", "dreplyraid"], ["/", ".", "!"]))
-async def draid(xspam: Client, message: Message):
+async def draid(Stella: Client, message: Message):
       global rusers
-      alt = message.text.split(" ")
+      zen = message.text.split(" ")
 
-      if len(alt) > 1:
-          ok = await xspam.get_users(alt[1])
+      if len(zen) > 1:
+          ok = await Stella.get_users(zen[1])
           id = ok.id
           if id in rusers:
               rusers.remove(id)
@@ -108,7 +108,7 @@ async def draid(xspam: Client, message: Message):
 
       elif message.reply_to_message:
           user_id = message.reply_to_message.from_user.id
-          ok = await xspam.get_users(user_id)
+          ok = await Stella.get_users(user_id)
           id = ok.id
           if id in rusers:
               rusers.remove(id)

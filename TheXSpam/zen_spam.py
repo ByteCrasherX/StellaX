@@ -58,7 +58,7 @@ async def pspam(client: Client, message: Message):
 
 
 @Client.on_message(filters.user(SUDO_USERS) & filters.command(["hang"], ["/", "!", "."]))
-async def hang(stella: Client, message: Message): 
+async def hang(Stella: Client, message: Message): 
     zen = message.text.split(" ")
     if len(zen) == 1:
         await message.reply_text(f"**Usage:** !hang 10")
@@ -71,6 +71,6 @@ async def hang(stella: Client, message: Message):
     count = int(zen[1])
     chat_id = message.chat.id
     for _ in range(count):
-         await stella.send_message(chat_id, adi)
+         await Stella.send_message(chat_id, adi)
          await asyncio.sleep(0.3)
  
