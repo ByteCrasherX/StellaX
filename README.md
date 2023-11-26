@@ -2,10 +2,10 @@
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
-# Aʟᴛʀᴏɴ 🖤
+# SᴛᴇʟʟᴀX 🖤
 ᴛʜɪs ɪs ᴀɴ ᴀᴅᴠᴀɴᴄᴇ sᴘᴀᴍ ᴜsᴇʀʙᴏᴛ's ʀᴇᴘᴏ, 
 
-ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴜs ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs  [🖤 𝐀𝐋𝐓𝐑𝐎𝐍 🖤](https://t.me/TheAltron)
+ʏᴏᴜ ᴄᴀɴ ғɪɴᴅ ᴜs ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs  [🖤 𝐙𝐄𝐍𝐁𝐎𝐓𝐒 🖤](https://t.me/ZenBotX)
 
 ━━━━━━━━━━━━━━━━━━━━━━
 # Dᴇᴘʟᴏʏ Oɴ Hᴇʀᴏᴋᴜ​ 🚀
@@ -13,7 +13,7 @@
 
 - ⚠️ Do not forget to fork this repo. Else error can occur in deployment.
 
-<p align="left"><a href="https://dashboard.heroku.com/new?template=https://github.com/ItZxSTaR/TheXSpam"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-cyan?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="left"><a href="https://dashboard.heroku.com/new?template=https://github.com/PyAaditya/StellaX"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-cyan?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 ━━━━━━━━━━━━━━━━━━━━━━
 
 # Rᴇǫᴜɪʀᴇᴍᴇɴᴛs
@@ -29,10 +29,11 @@
 ━━━━━━━━━━━━━━━━━━━━━━
 
 
-# Pʏʀᴏɢʀᴀᴍ (V1.4) Sᴇssɪᴏɴ Sᴛʀɪɴɢ
+<!-- # Pʏʀᴏɢʀᴀᴍ (V1.4) Sᴇssɪᴏɴ Sᴛʀɪɴɢ
 
 - [BᴏᴛLɪɴᴋ](https://t.me/SessionStringGeneratorRobot)
 
 - Bᴏᴛ Usᴇʀɴᴀᴍᴇ - `@SessionStringGeneratorRobot`
 
 ━━━━━━━━━━━━━━━━━━━━━━
+-->
